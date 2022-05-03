@@ -1,0 +1,22 @@
+version: 2
+sources:
+    - name: dbt_bike_customers
+      description: The source of the data any change to the ETL job should be done here
+      database: analytics
+      schema: sales_analytics
+      tables: 
+        - name: bike_sales
+
+models: 
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: 
+          - unique
+          - not_null
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
