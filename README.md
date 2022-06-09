@@ -1,14 +1,14 @@
-This project analyze product sales.
+This project analyze product sales, there are three staging table and a final aggregated table that was deployed to run every hour.
 
 Prior before the analysis, data was ingested from OLTP database to the Snowflake data warehouse using Fivetran. 
 
 
 
-### Using the starter project
+### Installations
 
-Try running the following commands:
-- dbt run
-- dbt test
+To get start with Dbt you have to install dbt on your local machine. Read the documentation below from getdbt:
+- https://docs.getdbt.com/dbt-cli/install/pip#
+
 
 
 ### Resources:
