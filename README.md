@@ -1,4 +1,8 @@
-Welcome to your new dbt project!
+This project analyze product sales.
+
+Prior before the analysis, data was ingested from OLTP database to the Snowflake data warehouse using Fivetran. 
+
+
 
 ### Using the starter project
 
